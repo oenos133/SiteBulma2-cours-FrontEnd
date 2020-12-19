@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +10,322 @@
 
     </head>
 <body>
+      <!-- Navbar de navigation fixée-->
+<nav class="navbar  is-fixed-top">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+        <img src="ressources/html-coding.png" alt="logo">
+        </a>
+        <div class="navbar-burger burger" id="btnNav" data-target="menuContent">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+    </div>
+    
+    <div id="menuContent" class="navbar-menu">
+        <div class="navbar-start">
+        <a class="navbar-item" href="#acc">
+            Accueil
+        </a>
+        </div>
+    
+        <div class="navbar-end">
 
-<h1>PortFolio</h1>
+            <a class="navbar-item" href="#aprop">
+                À Propos
+            </a>
+            <a class="navbar-item" href="#real">
+                Mes Réalisations
+            </a>
+            <a class="navbar-item" href="#contact">
+                Contact
+            </a>                     
 
+        </div>
+    </div>
+    </nav>
 
-</body>
+<!-- Section Hero Page d'accueil -->
+<!-- on change le point de break de 768px à 1023px -->
+<div class="columns is-desktop" id="acc">
+    <div class="column is-6-desktop">  
+
+        <section id="home" class="hero is-fullheight">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h2 class="subtitle">Bonjour</h2>
+                    <h1 class="title is-1">Je suis Pascal MONGE</h1>
+                    <h2 class="subtitle is-2">Un dev Front-End de plus !</h2>
+                    <button class="button is-primary is-rounded is-medium">Contactez-moi !</button>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    <div class="column is-6-desktop has-text-centered">
+        <img src="ressources/homeImg.jpg" alt="img accueil">
+    </div>
+</div>
+
+    <!-- Section à Propos -->
+<section class="container" id="aprop">
+<h2 class="title is-1 has-text-centered" style="font-family: kaushan script;">Qui suis-je ?</h2>
+<!-- 128x128 donne hauteur et largeur 128x128 -->
+<!-- image donne display block -->
+<figure class="image container is-128x128" >
+        <img class="is-rounded is-centered" src="ressources/face.jpg" alt="Image de pascal Monge">
+</figure>
+<br><br>
+<div class="columns is-centered">
+    <p class="column is-6 has-text-justified">
+        Je réalise la mise en forme Front End et le développement Back End de vos site web.<br>
+ La création de vos maquettes à l'aide de Figma, d'Adobe xd et De la suite Affinity.<br>
+La réalisation front end de votre site avec HTML, CSS, Sass, Bulma, Bootstrap, javaScript.<br>
+La programation de vos applications back-end avec PHP, MySQL, Symfony.<br>
+La création rapide de votre site WordPress avec Elementor.<br>
+J'assure la mise en ligne, la maintenance et l'animation de votre site web. La rédaction de vos textes et la mise en forme de vos photos et de vos graphiques.
+Avec vous, je designe votre logo, votre charte graphique et le choix de vos typographies.<br>
+Vous recherchez un développeur pour compléter votre equipe.
+Vous souhaitez être accompagné dans votre projet web.<br><br>
+Contactez moi! : oenos@free.fr
+    </p>
+</div>
+</section>
+<br><br>
+<!-- Section Réalisations -->
+<hr>
+<section class="container" id="real"> 
+<h2 class="title is-1 has-text-centered" style="font-family: kaushan script;">Mes Réalisations</h2>
+    
+<div class="columns is-multiline is-centered is-mobile">
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+            <div class="card">
+                    <div class="card-image">
+                        <figure class="image ">
+                        <img src="ressources/Sass.png" alt="Formation SASS">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">Formation Sass</p>
+                            <p class="subtitle is-6">@oenos</p>
+                        </div>
+                        </div>
+                    
+                        <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                        <div class="card-image">
+                            <figure class="image ">
+                            <img src="ressources/React.png" alt="Formation Reac">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Formation Réac</p>
+                                <p class="subtitle is-6">@oenos</p>
+                            </div>
+                            </div>
+                        
+                            <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                        <div class="card-image">
+                            <figure class="image ">
+                            <img src="ressources/bulma-banner.png" alt="Formation Bulma">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Formation Bulma</p>
+                                <p class="subtitle is-6">@oenos</p>
+                            </div>
+                            </div>
+                        
+                            <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                        <div class="card-image">
+                            <figure class="image ">
+                            <img src="ressources/node.png" alt="Formation Node.js">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Formation Node.js</p>
+                                <p class="subtitle is-6">@oenos</p>
+                            </div>
+                            </div>
+                        
+                            <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2021-1-1">11:09 PM - 1 Jan 2020</time>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                        <div class="card-image">
+                            <figure class="image ">
+                            <img src="ressources/JavaScript.png" alt="Formation JS">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Formation javaScript</p>
+                                <p class="subtitle is-6">@oenos</p>
+                            </div>
+                            </div>
+                        
+                            <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="column is-8-mobile is-4-tablet is-4-desktop">
+                <div class="card">
+                        <div class="card-image">
+                            <figure class="image ">
+                            <img src="ressources/AngularJS_logo.svg.png" alt="Formation Angular">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                            <div class="media-content">
+                                <p class="title is-4">Formation Angular.js</p>
+                                <p class="subtitle is-6">@oenos</p>
+                            </div>
+                            </div>
+                        
+                            <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                            <br>
+                            <time datetime="2021-1-1">11:09 PM - 1 Jan 2021</time>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</section>
+<br><br>
+
+<!-- Partie Contact -->
+<hr>
+<br><br>
+<section class="container" id="contact">
+        <h2 class="title is-1 has-text-centered" style="font-family: kaushan script;">Contactez-moi</h2>
+
+        <div class="field">
+                <label class="label">Nom</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Nom">
+                </div>
+              </div>
+              
+              <div class="field">
+                <label class="label">Prenom</label>
+                <div class="control has-icons-left ">
+                  <input class="input" type="text" placeholder="Prenom">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left ">
+                  <input class="input" type="email" placeholder="Email input" value="hello@">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+
+                </div>
+              </div>
+              
+              
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Votre message ..."></textarea>
+                </div>
+              </div>
+              
+              
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link">Envoyer !</button>
+                </div>
+                <div class="control">
+                  <button class="button is-text">Remettre à Zéro</button>
+                </div>
+              </div>
+</section>
+<br><br>
+<!-- Footer -->
+<footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            Tout droits réservés. License MIT.
+          </p>
+        </div>
+</footer>
+&copy;
+<script>
+
+        var btn = document.getElementById('btnNav');
+        var content = document.getElementById('menuContent');
+        console.log(content);
+        
+        btn.addEventListener('click', function(){
+            content.classList.toggle('is-active');
+        })
+        
+</script>
+    </body>
 </html>
